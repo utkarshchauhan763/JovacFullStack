@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested CSS Selectors</title>
+    <style>
+        /* Step 2: Targeting an element by ID inside a container */
+        .container #myHeader {
+            color: red;
+        }
+
+        /* Step 3: Targeting adjacent sibling elements */
+        div + h3 {
+            color: green;
+        }
+
+        .myText1 + .myText2 {
+            color: orange;
+        }
+
+        /* Step 4: Targeting form inputs */
+        .myInput[type="text"], input[type="email"] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="myHeader">Welcome to CSS Selectors</h1>
+    </div>
+
+    <div>
+        <p class="myText1">This is the first paragraph.</p>
+        <p class="myText2">This is the paragraph right after the first one (sibling).</p>
+    </div>
+
+    <div></div> <!-- to apply div + h3 styling -->
+    <h3>This heading appears immediately after a div (adjacent sibling)</h3>
+
+    <form>
+        <input type="text" class="myInput" placeholder="Your name"><br><br>
+        <input type="email" placeholder="Your email">
+    </form>
+
+</body>
+</html>
