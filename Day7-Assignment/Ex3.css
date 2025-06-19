@@ -1,0 +1,15 @@
+.container {
+    background-color: #e2e2e2;
+    padding: 10px;
+    height: 100vw;
+    display: grid; /* Enable CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+.item {
+    background-color: tomato;
+    padding: 5px;
+    color: white;
+}

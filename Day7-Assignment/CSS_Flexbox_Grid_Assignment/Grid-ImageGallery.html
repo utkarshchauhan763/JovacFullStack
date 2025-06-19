@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        .gallery-container {
+            width: 900px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            background: #fff;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Image Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="https://th.bing.com/th/id/R.17e0e4af3ac6439b745d0d380424ea6c?rik=xouQFncc8svAoA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-RgxTTFbpAgY%2fUUCAUA7CS9I%2fAAAAAAAAGLU%2fTLqTuhXjhXc%2fs1600%2f16.png&ehk=LYuWoDqXqihSfrQndQBp6Qj8O4DzOirsfZV5PbW%2buT4%3d&risl=&pid=ImgRaw&r=0" alt="Gallery 1"></div>
+        <div class="gallery-item"><img src="https://wallpapers.com/images/hd/cartoon-character-pictures-3rv5xe9ll8fb3xl8.jpg" alt="Gallery 2"></div>
+        <div class="gallery-item"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2022-05/24/16/asset/8efbccd64bec/sub-buzz-2375-1653409165-14.jpg" alt="Gallery 3"></div>
+        <div class="gallery-item"><img src="https://th.bing.com/th/id/R.6186ccb380f7c1faba4ebf0cb93f4ff4?rik=ZYdx6PBVTVYbVQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2f0%2f5%2f687383.jpg&ehk=JSGD5%2f7G%2bGOg6ytIlYthAkG%2bTRSRDntwppacV%2bhzhqI%3d&risl=&pid=ImgRaw&r=0" alt="Gallery 4"></div>
+        <div class="gallery-item"><img src="https://siachenstudios.com/wp-content/uploads/2021/12/90s-cartoons.jpg.webp" alt="Gallery 5"></div>
+        <div class="gallery-item"><img src="https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/6376ad6e044d79cc9d135c0f_HbiQEjshnytuguXkLZ5hTzfhZAgX8BEUXAl9Zr92hU-AAViSEb9VF-I91HOCyxzG3Tq1bUT81EEcxExijgQZ8jwEFwwRvUNSFKgn48vJO5AIed4fj5WPNK0JjkyaTqJ5HzYCQVwZ6eEC7MvWMmyKPR_Hp2glNcqllTFwk6CLtf1-lVaR9naJ4vEBrwcypQ.jpeg" alt="Gallery 6"></div>
+        <div class="gallery-item"><img src="https://assets-global.website-files.com/5a9ee6416e90d20001b20038/637ba75c29b8bbc87785dd89_lzU9W0UeTl7OOMtTQ3XiwvZ_TBzsWnPbFmRYfZjSvyVzKrTtwCK7dV84wf8LL-5Mik5uFPxzsT9AqqcZzyQXMuuuhpO_0NhhUnqh-Es9hYG_aCrABDWclCwvdbKriU-sm4rgmn6defg1Yws-SA75juTv18qcYlu5FYSPG4RWiE1OtwKfE8fw6pIv-sRTCQ.jpeg" alt="Gallery 7"></div>
+        <div class="gallery-item"><img src="https://th.bing.com/th/id/OIP.qmiGaMoDr9JuNbZfBX8s4AHaEo?rs=1&pid=ImgDetMain" alt="Gallery 8"></div>
+    </div>
+</body>
+</html>

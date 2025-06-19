@@ -1,0 +1,39 @@
+.container {
+    background-color: #e2e2e2;
+    padding: 10px;
+    display: grid;
+    height: 100vw;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 10px;
+    grid-template-areas: 
+        "header header header header"
+        "sidebar content content content"
+        "footer footer footer footer";
+}
+
+.item {
+    background-color: tomato;
+    padding: 5px;
+    color: white;
+}
+
+/* Assign grid areas */
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: content;
+    background-image: url('https://th.bing.com/th/id/OIP.0iqvqUM-_MntTZp4CMBaigHaEK?rs=1&pid=ImgDetMain');
+    background-size: contain;
+}
+.item3 {
+    grid-area: sidebar;
+    background-image: url('https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true');
+    background-size: cover;
+}
+.item4 {
+    grid-area: footer;
+    background-image: url('https://img-19.commentcamarche.net/P51ArxVXHJKsgdTzGDaqajlWJ3s=/1500x/smart/7b5dd43e607643fea1a61960e3f66fc4/ccmcms-commentcamarche/39481621.jpg');
+    background-size: cover;
+}
