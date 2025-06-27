@@ -1,60 +1,50 @@
-const undoStack = [];
-const redoStack = [];
-
-document.body.addEventListener('click', function (event) {
-  if (event.target.tagName === 'BUTTON') return;
-
-  const circle = document.createElement('div');
-  circle.classList.add('circle');
-  circle.style.left = `${event.clientX - 30}px`;
-  circle.style.top = `${event.clientY - 30}px`;
-  circle.style.backgroundColor = getRandomColor();
-
-  document.body.appendChild(circle);
-  undoStack.push(circle);
-  redoStack.length = 0;
-
-  updateButtons();
-});
-
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+// Digital Alarm Assistant
+function setAlarm(time, message) {
+    const now = new Date();
+    const alarmTime = new Date(time);
+    const delay = alarmTime - now;
+    if (delay > 0) {
+        setTimeout(() => {
+            alert(message);
+        }, delay);
+    } else {
+        console.log("Time must be in the future.");
+    }
 }
 
-function undo() {
-  if (undoStack.length === 0) return;
-
-  const last = undoStack.pop();
-  last.remove();
-  redoStack.push(last);
-  updateButtons();
+// TAX Calculator
+function calculateTax(amount, ...taxPercentages) {
+    let totalTax = taxPercentages.reduce((sum, tax) => sum + tax, 0);
+    return amount + (amount * totalTax / 100);
 }
 
-function redo() {
-  if (redoStack.length === 0) return;
-
-  const circle = redoStack.pop();
-  document.body.appendChild(circle);
-  undoStack.push(circle);
-  updateButtons();
+// Recursive Countdown Timer
+function countdown(n) {
+    if (n < 1) {
+        console.log("Blast Off!");
+        return;
+    }
+    console.log(n);
+    setTimeout(() => countdown(n - 1), 1000);
 }
 
-function resetAll() {
-  while (undoStack.length) {
-    const circle = undoStack.pop();
-    circle.remove();
-  }
-  redoStack.length = 0;
-  updateButtons();
+// Even Number Checker (without %)
+function isEven(n) {
+    n = Math.abs(n);
+    if (n === 0) return true;
+    if (n === 1) return false;
+    return isEven(n - 2);
 }
 
-function updateButtons() {
-  document.getElementById('undoBtn').disabled = undoStack.length === 0;
-  document.getElementById('redoBtn').disabled = redoStack.length === 0;
-  document.getElementById('resetBtn').disabled = undoStack.length === 0;
+// Basic Calculator with Callback
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+// Book Search Simulator
+function searchBook(bookName, callback) {
+    setTimeout(() => {
+        const results = [`${bookName} - Author A`, `${bookName} - Author B`];
+        callback(results);
+    }, 2000);
 }
