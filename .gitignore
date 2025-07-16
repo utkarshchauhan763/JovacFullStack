@@ -1,6 +1,9 @@
 ﻿node_modules/
+<<<<<<< HEAD
+=======
 */node_modules/
 **/node_modules/
+>>>>>>> 51b0b21e3e51b4d458e0c4c1b63916266ead022b
 dist/
 build/
 .env
