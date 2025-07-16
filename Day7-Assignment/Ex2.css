@@ -1,0 +1,19 @@
+.container {
+    background-color: #e2e2e2;
+    padding: 10px;
+    height: 100vh; /* Make container as tall as viewport */
+    display: flex; /* Enable flexbox */
+    flex-flow: row wrap; /* Set flex direction and wrapping */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    align-content: center; /* Center lines of items if wrapping */
+}
+
+.item {
+    background-color: tomato;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}

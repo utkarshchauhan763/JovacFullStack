@@ -1,0 +1,51 @@
+/* Sticky notes container */
+.parent {
+  position: relative;
+  background-color: #d2d2d2;
+  padding: 10px;
+  margin: 20px;
+  width: 400px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+/* General sticky note styling */
+.note {
+  position: absolute;
+  padding: 10px;
+  width: 200px;
+  opacity: 0.9;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Individual note positioning */
+.task1 {
+  background-color: orange;
+  top: 120px;
+  left: 50px;
+}
+
+.task2 {
+  background-color: greenyellow;
+  top: 220px;
+  left: 150px;
+}
+
+.task3 {
+  background-color: royalblue;
+  color: white;
+  top: 360px;
+  left: 80px;
+}
+
+/* Headline positioning */
+#headline {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
