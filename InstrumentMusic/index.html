@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Musical Instruments Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎵 Musical Instruments Studio</h1>
+        <p>Hover over the instruments to hear their beautiful sounds!</p>
+    </header>
+
+    <main class="instruments-container">
+        <div class="instrument-card" data-sound="piano">
+            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=300&h=300&fit=crop" alt="Piano">
+            <h3>🎹 Piano</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="guitar">
+            <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300&h=300&fit=crop" alt="Guitar">
+            <h3>🎸 Guitar</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="drums">
+            <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=300&h=300&fit=crop" alt="Drums">
+            <h3>🥁 Drums</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="violin">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Violin">
+            <h3>🎻 Violin</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="saxophone">
+            <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=300&h=300&fit=crop" alt="Saxophone">
+            <h3>🎷 Saxophone</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="trumpet">
+            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=300&fit=crop" alt="Trumpet">
+            <h3>🎺 Trumpet</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="flute">
+            <img src="https://images.unsplash.com/photo-1465821185615-20b3c2fbf41b?w=300&h=300&fit=crop" alt="Flute">
+            <h3>🪈 Flute</h3>
+            <div class="sound-wave"></div>
+        </div>
+
+        <div class="instrument-card" data-sound="harp">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" alt="Harp">
+            <h3>🪕 Harp</h3>
+            <div class="sound-wave"></div>
+        </div>
+    </main>
+
+    <!-- Audio elements for each instrument -->
+    <audio id="piano-audio" preload="auto">
+        <source src="piano.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="guitar-audio" preload="auto">
+        <source src="sounds/guitar.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <audio id="drums-audio" preload="auto">
+        <source src="sounds/drums.mp3" type="audio/mpeg">
+       
+    </audio>
+
+    <audio id="violin-audio" preload="auto">
+        <source src="sounds/violin.mp3" type="audio/mpeg">
+       
+    </audio>
+
+    <audio id="saxophone-audio" preload="auto">
+        <source src="sounds/saxophone.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <audio id="trumpet-audio" preload="auto">
+        <source src="sounds/trumpet.mp3" type="audio/mpeg">
+      
+    </audio>
+
+    <audio id="flute-audio" preload="auto">
+        <source src="sounds/flute.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <audio id="harp-audio" preload="auto">
+        <source src="sounds/harp.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Fest Registration Form</title>
+</head>
+<body>
+  <h1>Tech Fest 2025 - Registration Form</h1>
+
+  <form action="/submit" method="POST">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label><br>
+    <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label><br>
+    <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label><br><br>
+
+    <label for="college">Select Your College:</label>
+    <select id="college">
+      <option value="">--Select--</option>
+      <option value="GLA">GLA University</option>
+      <option value="amity">Amity University</option>
+      <option value="iit">IIT Delhi</option>
+    </select><br><br>
+
+    <label>Events Interested:</label><br>
+    <input type="checkbox" id="coding"><label for="coding">Coding Contest</label><br>
+    <input type="checkbox" id="quiz"><label for="quiz">Tech Quiz</label><br>
+    <input type="checkbox" id="robotics"><label for="robotics">Robotics</label><br><br>
+
+    <label for="remarks">Any Special Requests?</label><br>
+    <textarea id="remarks" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
